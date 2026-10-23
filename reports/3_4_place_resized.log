@@ -1,0 +1,52 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 6 thread(s).
+read_liberty /OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db /work/flow/work/results/sky130hd/spi_master/base/3_3_place_gp.odb
+read_sdc /work/flow/work/results/sky130hd/spi_master/base/2_floorplan.sdc
+source /OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+estimate_parasitics -placement
+Perform buffer insertion and gate resizing...
+repair_design -verbose -match_cell_footprint
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       203
+       10 |     +0.0% |       0 |       0 |             0 |       193
+       20 |     +0.0% |       0 |       0 |             0 |       183
+       30 |     +0.0% |       0 |       0 |             0 |       173
+       40 |     +0.0% |       0 |       0 |             0 |       163
+       50 |     +0.0% |       0 |       0 |             0 |       153
+       60 |     +0.0% |       0 |       0 |             0 |       143
+       70 |     +0.0% |       0 |       0 |             0 |       133
+       80 |     +0.0% |       0 |       0 |             0 |       123
+       90 |     +0.0% |       0 |       0 |             0 |       113
+      100 |     +0.0% |       0 |       0 |             0 |       103
+      110 |     +0.0% |       0 |       0 |             0 |        93
+      120 |     +0.0% |       0 |       0 |             0 |        83
+      130 |     +0.0% |       0 |       0 |             0 |        73
+      140 |     +0.0% |       0 |       0 |             0 |        63
+      150 |     +0.0% |       0 |       0 |             0 |        53
+      160 |     +0.0% |       0 |       0 |             0 |        43
+      170 |     +0.0% |       0 |       0 |             0 |        33
+      180 |     +0.0% |       0 |       0 |             0 |        23
+      190 |     +0.0% |       0 |       0 |             0 |        13
+      200 |     +0.0% |       0 |       0 |             0 |         3
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0504] Runtime: 0.03s
+Floating nets: 
+Report metrics stage 3, resizer...
+
+==========================================================================
+resizer report_design_area
+--------------------------------------------------------------------------
+Design area 2128 um^2 38% utilization.
+Instance count before 259, after 259
+Pin count before 707, after 707
+write_db /work/flow/work/results/sky130hd/spi_master/base/3_4_place_resized.odb
+Elapsed time: 0:00.67[h:]min:sec. CPU time: user 0.45 sys 0.14 (87%). Peak memory: 135128KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+3_4_place_resized      .odb          0        1     0.88      131 0eae1066d8

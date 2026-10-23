@@ -1,0 +1,17 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 6 thread(s).
+read_liberty /OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db /work/flow/work/results/sky130hd/spi_master/base/5_2_route.odb
+read_sdc /work/flow/work/results/sky130hd/spi_master/base/5_1_grt.sdc
+source /OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+filler_placement "sky130_fd_sc_hd__fill_1 sky130_fd_sc_hd__fill_2 sky130_fd_sc_hd__fill_4 sky130_fd_sc_hd__fill_8"
+[INFO DPL-0001] Placed 567 filler instances.
+Design area 2222 um^2 39% utilization.
+write_db /work/flow/work/results/sky130hd/spi_master/base/5_3_fillcell.odb
+Elapsed time: 0:00.48[h:]min:sec. CPU time: user 0.38 sys 0.07 (91%). Peak memory: 104960KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+5_3_fillcell           .odb          0        0     0.94      102 6129ca41aa

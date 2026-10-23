@@ -1,0 +1,269 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 6 thread(s).
+read_liberty /OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db /work/flow/work/results/sky130hd/spi_master/base/4_cts.odb
+read_sdc /work/flow/work/results/sky130hd/spi_master/base/4_cts.sdc
+source /OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+pin_access
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     441
+Number of vias:       29
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+
+Design:                   spi_master
+Die area:                 ( 0 0 ) ( 79870 79870 )
+Number of track patterns: 12
+Number of DEF vias:       0
+Number of components:     267
+Number of terminals:      27
+Number of snets:          2
+Number of nets:           208
+
+[INFO DRT-0167] List of default vias:
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 63.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete Fr_VIA.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] FR_VIA shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 6895.
+[INFO DRT-0033] mcon shape region query size = 3876.
+[INFO DRT-0033] met1 shape region query size = 1141.
+[INFO DRT-0033] via shape region query size = 350.
+[INFO DRT-0033] met2 shape region query size = 225.
+[INFO DRT-0033] via2 shape region query size = 280.
+[INFO DRT-0033] met3 shape region query size = 220.
+[INFO DRT-0033] via3 shape region query size = 280.
+[INFO DRT-0033] met4 shape region query size = 88.
+[INFO DRT-0033] via4 shape region query size = 13.
+[INFO DRT-0033] met5 shape region query size = 23.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 491 pins.
+[INFO DRT-0081]   Complete 63 unique inst patterns.
+[INFO DRT-0084]   Complete 130 groups.
+#scanned instances     = 267
+#unique  instances     = 63
+#stdCellGenAp          = 2179
+#stdCellValidPlanarAp  = 18
+#stdCellValidViaAp     = 1517
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 720
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:00:24, elapsed time = 00:00:05, memory = 109.38 (MB), peak = 109.38 (MB)
+Took 6 seconds: pin_access
+global_route -congestion_report_file /work/flow/work/reports/sky130hd/spi_master/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 513
+[INFO GRT-0019] Found 6 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 37
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal       1808          1416          21.68%
+met2       Vertical         1510          1170          22.52%
+met3       Horizontal       1115           875          21.52%
+met4       Vertical          740           560          24.32%
+met5       Horizontal        180           110          38.89%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 1096
+[INFO GRT-0198] Via related Steiner nodes: 16
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 1333
+[INFO GRT-0112] Final usage 3D: 4565
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Congestion
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1              1416           284           20.06%             0 /  0 /  0
+met2              1170           227           19.40%             0 /  0 /  0
+met3               875            25            2.86%             0 /  0 /  0
+met4               560            30            5.36%             0 /  0 /  0
+met5               110             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             4131           566           13.70%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 6755 um
+[INFO GRT-0014] Routed nets: 206
+[INFO GRT-0303] Global routing runtime = 00:00:00
+estimate_parasitics -global_routing
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       211
+       10 |     +0.0% |       0 |       0 |             0 |       201
+       20 |     +0.0% |       0 |       0 |             0 |       191
+       30 |     +0.0% |       0 |       0 |             0 |       181
+       40 |     +0.0% |       0 |       0 |             0 |       171
+       50 |     +0.0% |       0 |       0 |             0 |       161
+       60 |     +0.0% |       0 |       0 |             0 |       151
+       70 |     +0.0% |       0 |       0 |             0 |       141
+       80 |     +0.0% |       0 |       0 |             0 |       131
+       90 |     +0.0% |       0 |       0 |             0 |       121
+      100 |     +0.0% |       0 |       0 |             0 |       111
+      110 |     +0.0% |       0 |       0 |             0 |       101
+[WARNING RSZ-0104] Net _136_ only has one pin. Check if it is intended to be dangling.
+      120 |     +0.0% |       0 |       0 |             0 |        91
+[WARNING RSZ-0104] Net _135_ only has one pin. Check if it is intended to be dangling.
+      130 |     +0.0% |       0 |       0 |             0 |        81
+      140 |     +0.0% |       0 |       0 |             0 |        71
+      150 |     +0.0% |       0 |       0 |             0 |        61
+      160 |     +0.0% |       0 |       0 |             0 |        51
+      170 |     +0.0% |       0 |       0 |             0 |        41
+      180 |     +0.0% |       0 |       0 |             0 |        31
+      190 |     +0.0% |       0 |       0 |             0 |        21
+      200 |     +0.0% |       0 |       0 |             0 |        11
+      210 |     +0.0% |       0 |       0 |             0 |         1
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0504] Runtime: 0.05s
+global_route -start_incremental
+detailed_placement
+[INFO DPL-0006] Core area: 5675.44 um^2
+[INFO DPL-0007] Movable instances area: 2132.04 um^2
+[INFO DPL-0008] Fixed instances area within core: 90.09 um^2
+[INFO DPL-0009] Utilization: 39.2%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 267 cells
+[INFO DPL-0500] Runtime: 0.00s
+Detailed Placement Analysis
+---------------------------------
+legalizer            negotiation
+total moves                   0
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            2892.4 u
+legalized HPWL           2892.4 u
+delta HPWL                    0 %
+
+global_route -end_incremental -congestion_report_file /work/flow/work/reports/sky130hd/spi_master/base/congestion_post_repair_design.rpt
+Repair setup and hold violations...
+estimate_parasitics -global_routing
+repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
+[INFO RSZ-0505] Runtime: 0.05s
+[INFO RSZ-0033] No hold violations found.
+[INFO RSZ-0506] Runtime: 0.01s
+global_route -start_incremental
+detailed_placement
+[INFO DPL-0006] Core area: 5675.44 um^2
+[INFO DPL-0007] Movable instances area: 2132.04 um^2
+[INFO DPL-0008] Fixed instances area within core: 90.09 um^2
+[INFO DPL-0009] Utilization: 39.2%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 267 cells
+[INFO DPL-0500] Runtime: 0.00s
+Detailed Placement Analysis
+---------------------------------
+legalizer            negotiation
+total moves                   0
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            2892.4 u
+legalized HPWL           2892.4 u
+delta HPWL                    0 %
+
+check_placement -verbose
+global_route -end_incremental -congestion_report_file /work/flow/work/reports/sky130hd/spi_master/base/congestion_post_repair_timing.rpt
+estimate_parasitics -global_routing
+global_route -start_incremental
+global_route -end_incremental -congestion_report_file /work/flow/work/reports/sky130hd/spi_master/base/congestion_post_recover_power.rpt
+Repair antennas...
+[INFO GRT-0012] Found 0 antenna violations.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+Estimate parasitics...
+estimate_parasitics -global_routing
+Report metrics stage 5, global route...
+
+==========================================================================
+global route report_design_area
+--------------------------------------------------------------------------
+Design area 2222 um^2 39% utilization.
+[INFO FLW-0007] clock clk period 10.000000
+[INFO FLW-0008] Clock clk period 3.564
+[INFO FLW-0009] Clock clk slack 6.249
+write_sdc -no_timestamp /work/flow/work/results/sky130hd/spi_master/base/updated_clks.sdc
+[INFO FLW-0011] Path endpoint path count 90
+write_db /work/flow/work/results/sky130hd/spi_master/base/5_1_grt.odb
+write_sdc -no_timestamp /work/flow/work/results/sky130hd/spi_master/base/5_1_grt.sdc
+Elapsed time: 0:06.65[h:]min:sec. CPU time: user 24.29 sys 1.39 (386%). Peak memory: 247668KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+5_1_grt                .odb          6       26     3.86      241 2f5eb6dd97
+5_1_grt                .sdc                                       89185cef8f

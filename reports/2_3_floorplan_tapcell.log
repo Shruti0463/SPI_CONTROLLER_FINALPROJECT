@@ -1,0 +1,16 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 6 thread(s).
+read_liberty /OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db /work/flow/work/results/sky130hd/spi_master/base/2_2_floorplan_macro.odb
+read_sdc /work/flow/work/results/sky130hd/spi_master/base/2_1_floorplan.sdc
+source /OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+[INFO TAP-0005] Inserted 72 tapcells.
+Design area 1909 um^2 34% utilization.
+write_db /work/flow/work/results/sky130hd/spi_master/base/2_3_floorplan_tapcell.odb
+Elapsed time: 0:00.51[h:]min:sec. CPU time: user 0.38 sys 0.05 (84%). Peak memory: 102016KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+2_3_floorplan_tapcell  .odb          0        0     0.84       99 c6c6d5b251
