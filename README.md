@@ -80,3 +80,6 @@ Physical design (Docker image `openroad/orfs:latest`):
 
 ### DRC result
 ![DRC](screenshots/spi_drc_result.png)
+## Project Video
+
+https://drive.google.com/file/d/1-69ZHbw95GqfKljr5u7_27WzlsTPVxzO/view?usp=drivesdk
