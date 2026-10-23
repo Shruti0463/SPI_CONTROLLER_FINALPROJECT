@@ -32,6 +32,7 @@ An 8-bit SPI master (mode 0) taken through the complete open-source RTL-to-GDSII
 | Clock tree synthesis | OpenROAD (TritonCTS) | Done |
 | Routing | OpenROAD (TritonRoute) | Done |
 | Signoff STA | OpenSTA | Done |
+| Physical verification (DRC) | KLayout | Done, 0 violations |
 | Layout vs. schematic (LVS) | KLayout | Done, netlists match |
 | GDSII generation | OpenROAD, KLayout | Done (`6_final.gds`) |
 | DFT (scan insertion) | n/a | Not performed |
@@ -48,6 +49,7 @@ An 8-bit SPI master (mode 0) taken through the complete open-source RTL-to-GDSII
 | Hold worst slack | +0.51 ns (met) |
 | TNS | 0.00 |
 | Routing DRC violations | 0 |
+| KLayout DRC (sky130hd.lydrc) | 0 violations |
 | LVS | Netlists match |
 
 ## Screenshots
@@ -75,3 +77,6 @@ Physical design (Docker image `openroad/orfs:latest`):
 
     docker run --rm -v $PWD:/work openroad/orfs:latest bash -c \
       "cd /OpenROAD-flow-scripts/flow && make DESIGN_CONFIG=/work/flow/config.mk WORK_HOME=/work/flow/work"
+
+### DRC result
+![DRC](screenshots/spi_drc_result.png)
